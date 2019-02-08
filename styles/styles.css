@@ -17,11 +17,14 @@
   input {
     border-radius: 5px;
     font-size: 20px;
-    padding: 5px 10px;
+    padding: 10px 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     width: 87%;
     box-shadow: none;
-    color: white;
+    color: #eee;
     outline: none;
+    Border: 2px solid lightgray;
   }
   section {
     background-color: white;
@@ -38,7 +41,7 @@
    font-size: 18px;
    padding: 10px 0;
    width: 92%;
-   color: white;
+   color: #eee;
    margin-top: 20px;
 
   }
@@ -81,5 +84,10 @@ form {
 button {
   outline: none;
 }
-
-/* input fields are not transparent? cannot resolve */
+#filter {
+-webkit-text-fill-color: lightgray;
+}
+#add {
+  
+  -webkit-text-fill-color: lightgray;
+}
