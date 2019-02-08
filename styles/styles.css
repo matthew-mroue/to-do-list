@@ -1,0 +1,85 @@
+
+
+ body, html {
+    margin: 0 auto;
+    background: linear-gradient(to right, #f857a6, #ff5858);
+    Font-weight: 300;
+    font-size: 20px;
+    font-family: 'Open Sans';
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  input {
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 10px;
+    width: 87%;
+    box-shadow: none;
+    color: white;
+    outline: none;
+  }
+  section {
+    background-color: white;
+    padding: 20px;
+    width: 900px;
+    margin: 50px;
+    border-radius: 8px;
+    padding-left: 7%;
+  }
+  
+.add {
+   background-color: #ff1493;
+   border-radius: 5px;
+   font-size: 18px;
+   padding: 10px 0;
+   width: 92%;
+   color: white;
+   margin-top: 20px;
+
+  }
+  
+a {
+  color: black;
+  float: right;
+  margin-right: 13%;
+}
+.complete {
+color: #ff69b4;
+border-radius: 5px;
+border-color: #ff69b4;
+}
+p {
+  display: inline-block;
+  margin: 10px;
+
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.completed {
+  text-decoration: line-through;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+}
+#top {
+  font-size: 30px;
+  margin-bottom: 0%;
+}
+#sub {
+  font-size: 20px;
+  margin-top: 0px;
+  box-shadow: none;
+}
+button {
+  outline: none;
+}
+
+/* input fields are not transparent? cannot resolve */

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="todoApp" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Angular Lab 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/styles.css" />
+
+</head>
+<body>
+    <main>
+        <section ng-controller="ToDoController as $ctrl">
+            <div class="title" id="top"><p>TODO List</p>
+            <p id="sub">A place to store things you have to do!</p></div>
+            <input type="text" id="filter" placeholder="Filter your to-dos">
+            <ol>
+                <div class="inputs">
+                    <li ng-repeat="todo in $ctrl.tasks">
+                    <button class="complete" ng-if="!todo.completed">Complete</button>
+                    <!-- task name -->
+                    <p ng-class="{completed: todo.completed}">{{ todo.task }}</p>
+                    <a href=""><i class="fas fa-times"></i></a>
+                    </li>
+                </div>
+            </ol>
+            
+            <input type="text" id="add" placeholder="Add your to-do">
+            <button class="add">Add</button>
+            
+        </section>
+    </main>
+    <script src="https://code.angularjs.org/1.6.5/angular.js "></script>
+    <script src="app/app.module.js"></script>
+    <script src="app/app.controller.js"></script>
+</body>
+</html>
